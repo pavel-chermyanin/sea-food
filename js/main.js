@@ -1,0 +1,9 @@
+$(function () {
+    $('.header-slider').slick({
+        
+    })
+});
+
+
+
+
