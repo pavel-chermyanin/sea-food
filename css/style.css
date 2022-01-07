@@ -26,7 +26,7 @@ body {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding: 27px 43px 0 16px;
+  padding: 20px 43px 0 16px;
 }
 
 .phone {
@@ -60,8 +60,11 @@ body {
 .header__content {
   background-image: url(../images/header-bg.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+  padding-bottom: 20px;
+  margin-top: -100px;
+  min-height: calc(100vh - 50px);
 }
 
 .title {
@@ -71,21 +74,97 @@ body {
   font-size: 72px;
   line-height: 94px;
   max-width: 589px;
-  padding-top: 200px;
+  padding-top: 170px;
   padding-left: 112px;
-  margin-bottom: 130px;
+  margin-bottom: 60px;
 }
 
-.header-slider{
+.header-slider {
   max-width: 522px;
   padding-left: 112px;
   padding-top: 57px;
   padding-bottom: 135px;
 }
 
-.header-slider__text{
+.header-slider__text {
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
+}
+
+.slick-arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  left: 40px;
+}
+
+.slick-prev {
+  top: 0;
+}
+
+.slick-next {
+  bottom: 0;
+}
+
+.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 35px;
+  top: 58px;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slick-dots button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.slick-active button {
+  opacity: 1;
+}
+
+.slick-dots button::before {
+  content: "0";
+}
+.slick-dots li:nth-child(n + 10) button::before {
+  content: "";
+}
+
+.header__content-btn {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+  padding: 14px 88px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 112px;
+  display: inline-block;
+  transform: translateY(-120px);
+  position: absolute;
+}
+
+.header__content-box {
+  display: flex;
+  margin-left: 100%;
+  margin-right: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.header__content-link--active{
+  font-weight: 700;
 }
