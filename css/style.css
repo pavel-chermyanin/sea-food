@@ -154,6 +154,11 @@ body {
   display: inline-block;
   transform: translateY(-120px);
   position: absolute;
+  transition: all .3s;
+}
+.header__content-btn:hover {
+  background-color: #fff;
+  color: #001e64;
 }
 
 .header__content-box {
@@ -262,6 +267,12 @@ body {
   border-radius: 20px;
   background-color: transparent;
   text-transform: uppercase;
+  transition: all .3s;
+}
+
+.product__content-btn:hover{
+  background-color: #001e64;
+  color: #fff;
 }
 
 .seafood-box {
@@ -366,4 +377,31 @@ body {
 }
 .contacts__box-item span {
   display: block;
+}
+.footer{
+  padding: 25px 0 110px;
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 45px 0 23px;
+}
+.footer__inner .menu{
+  padding-bottom: 30px;
+}
+.footer-social__list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 19px;
+}
+.footer-social__item + .footer-social__item{
+  margin-left: 10px;
+}
+.footer-social__link path{
+  transition: all .3s;
+}
+.footer-social__link:hover path{
+  fill: #001e64;
 }
