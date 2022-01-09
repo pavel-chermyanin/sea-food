@@ -163,7 +163,7 @@ body {
 
 .header__content-box {
   display: flex;
-  margin-left: 100%;
+  justify-content: flex-end;
   margin-right: 30px;
   font-size: 18px;
   line-height: 21px;
@@ -390,6 +390,9 @@ body {
 .footer__inner .menu{
   padding-bottom: 30px;
 }
+.footer__inner .menu__link{
+  color: #232222;
+}
 .footer-social__list{
   list-style: none;
   display: flex;
@@ -404,4 +407,66 @@ body {
 }
 .footer-social__link:hover path{
   fill: #001e64;
+}
+
+.menu__btn{
+  display: none;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 13px 0;
+  cursor: pointer;
+  position: relative;
+}
+.menu__btn::after,
+.menu__btn::before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  background-color: #232222;
+  left: 0;
+  right: 0;
+}
+.menu__btn::after{
+  top: 0;
+}
+.menu__btn::before{
+  bottom: 0;
+}
+.menu__btn span{
+  display: block;
+  height: 4px;
+  background-color: #232222;
+}
+
+@media(max-width: 1000px) {
+  .menu__list{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    background-color: #fff;
+    display: block;
+    top: -350px;
+    transition: all .3s ease-in-out;
+  }
+  .menu__list.menu__list--active {
+    top: 50px;
+  }
+  .menu__btn{
+    display: block;
+  }
+  .menu{
+    margin: 12px 20px 0 auto;
+  }
+  .menu__item + .menu__item{
+    margin-left: 0;
+  }
+  .menu__link{
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .menu__link:hover{
+    border: none;
+  }
 }
