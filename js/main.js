@@ -29,6 +29,24 @@ $(function () {
             '<button type="button" class="product-prev product-arrow"><img src="images/product-prev.svg" alt="Arrow"></button>',
         nextArrow:
             '<button type="button" class="product-next product-arrow"><img src="images/product-next.svg" alt="Arrow"></button>',
+        responsive: [
+            {
+                breakpoint: 891,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3,
+                    arrows: false,
+                    dots: true
+                },
+                breakpoint: 461,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    vertical: false,
+                },
+            },
+        ],
     });
     $(".product__content").slick({
         slidesToShow: 1,
@@ -36,6 +54,14 @@ $(function () {
         asNavFor: ".product__name",
         vertical: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 891,
+                settings: {
+                    vertical: false,
+                },
+            },
+        ],
     });
 
     $(".menu__btn").on("click", function () {
