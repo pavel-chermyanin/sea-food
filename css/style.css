@@ -557,6 +557,8 @@ body {
   }
   .header__content-btn {
     margin-left: 50px;
+    padding: 12px 60px;
+    font-size: 20px;
   }
   .product {
     padding-top: 50px;
@@ -579,6 +581,9 @@ body {
   .menu__list {
     left: 10%;
     right: 10%;
+  }
+  .product__content-item {
+    margin-bottom: 10px;
   }
   .header-slider {
     padding-left: 0;

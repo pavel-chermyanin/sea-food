@@ -38,6 +38,8 @@ $(function () {
                     arrows: false,
                     dots: true
                 },
+            },
+            {
                 breakpoint: 461,
                 settings: {
                     slidesToShow: 1,
@@ -45,7 +47,8 @@ $(function () {
                     dots: true,
                     vertical: false,
                 },
-            },
+            }
+            
         ],
     });
     $(".product__content").slick({
